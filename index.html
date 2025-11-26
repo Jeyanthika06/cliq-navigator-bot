@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Network Guide</title>
+
+  <!-- Connect CSS and JS (VERY IMPORTANT) -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Network Guide</h1>
+      <p class="tagline">Quick helper for switching and fixing networks</p>
+    </header>
+
+    <main class="app-main">
+      <!-- Status card -->
+      <section class="card status-card">
+        <h2>Current Context</h2>
+        <p id="status-loading" class="muted">Loading environment…</p>
+
+        <div class="status-row">
+          <span class="label">Organization</span>
+          <span id="org-value" class="value">—</span>
+        </div>
+
+        <div class="status-row">
+          <span class="label">Network</span>
+          <span id="network-value" class="value">—</span>
+        </div>
+
+        <div class="status-row">
+          <span class="label">Developer Space</span>
+          <span id="devspace-value" class="value">—</span>
+        </div>
+      </section>
+
+      <!-- Actions card -->
+      <section class="card actions-card">
+        <h2>Ask for Help</h2>
+        <p class="muted">Click a button and I’ll explain in simple steps.</p>
+
+        <div class="button-row">
+          <button id="btn-where" class="btn primary">
+            Where am I?
+          </button>
+          <button id="btn-fix-devspace" class="btn">
+            Fix Developer Space
+          </button>
+          <button id="btn-switch" class="btn">
+            How to Switch Networks
+          </button>
+        </div>
+      </section>
+
+      <!-- Reply card -->
+      <section class="card reply-card">
+        <h2>Assistant Reply</h2>
+        <p id="reply-empty" class="muted">
+          No replies yet — click a button above.
+        </p>
+        <div id="reply-content" class="reply-content"></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>Network Guide • SkillFlow (student project)</span>
+    </footer>
+  </div>
+</body>
+</html>
